@@ -1,0 +1,3 @@
+In proiect este necesara adaugarea bibliotecilor gson 2.8.6, pentru citirea fisierului json.
+Aplicatia se ruleaza din clasa SimulationEngine.
+Rezultatele se pot vedea in consola si in fisierul text "output.txt".

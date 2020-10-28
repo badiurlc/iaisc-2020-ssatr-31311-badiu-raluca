@@ -1,0 +1,35 @@
+{
+	"noduri" : [
+			{ "nume" : "P0", "nr_jetoane" : "1" },
+			{ "nume" : "P1", "nr_jetoane" : "0" },
+			{ "nume" : "P2", "nr_jetoane" : "0" },
+			{ "nume" : "P3", "nr_jetoane" : "0" },
+			{ "nume" : "P4", "nr_jetoane" : "1" },
+			{ "nume" : "P5", "nr_jetoane" : "0" },
+			{ "nume" : "P6", "nr_jetoane" : "1" },
+			{ "nume" : "P7", "nr_jetoane" : "0" },
+			{ "nume" : "P8", "nr_jetoane" : "0" },
+			{ "nume" : "P9", "nr_jetoane" : "0" },
+			{ "nume" : "P10", "nr_jetoane" : "0" },
+			{ "nume" : "P11", "nr_jetoane" : "0" },
+			{ "nume" : "P12", "nr_jetoane" : "0" },	
+			{ "nume" : "P13", "nr_jetoane" : "0" }
+	],
+
+	"tranzitii" : [
+				{ "nume" : "T0", "inputs" : [ "P0" ], "outputs" : [ "P1", "P2" ], "min" : "0", "max" : "0" },
+				{ "nume" : "T1", "inputs" : [ "P1" ], "outputs" : [ "P3" ], "min" : "1", "max" : "1" },
+				{ "nume" : "T2", "inputs" : [ "P2" ], "outputs" : [ "P5" ], "min" : "4", "max" : "4" },
+				{ "nume" : "T3", "inputs" : [ "P3", "P4" ], "outputs" : [ "P7" ], "min" : "2", "max" : "4" },
+				{ "nume" : "T4", "inputs" : [ "P5", "P6" ], "outputs" : [ "P8" ], "min" : "2", "max" : "5" },
+				{ "nume" : "T5", "inputs" : [ "P7", "P6" ], "outputs" : [ "P9" ], "min" : "3", "max" : "4" },
+				{ "nume" : "T6", "inputs" : [ "P8", "P4" ], "outputs" : [ "P10" ], "min" : "2", "max" : "3" },
+				{ "nume" : "T7", "inputs" : [ "P9" ], "outputs" : [ "P11", "P4", "P6" ], "min" : "0", "max" : "0" },
+				{ "nume" : "T8", "inputs" : [ "P10" ], "outputs" : [ "P12", "P4", "P6" ], "min" : "0", "max" : "0" },
+				{ "nume" : "T9", "inputs" : [ "P11", "P12" ], "outputs" : [ "P13" ], "min" : "0", "max" : "0" },
+				{ "nume" : "T10", "inputs" : [ "P13" ], "outputs" : [  ], "min" : "0", "max" : "0" }
+
+
+
+	]
+}
